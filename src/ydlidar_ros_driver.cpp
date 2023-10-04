@@ -75,8 +75,8 @@ int main(int argc, char **argv) {
 
   //////////////////////int property/////////////////
   /// lidar baudrate
-  int optval = 230400;
-  nh_private.param<int>("baudrate", optval, 230400);
+  int optval = 512000;
+  nh_private.param<int>("baudrate", optval, 512000);
   laser.setlidaropt(LidarPropSerialBaudrate, &optval, sizeof(int));
   /// tof lidar
   optval = TYPE_TRIANGLE;
